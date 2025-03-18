@@ -391,7 +391,7 @@ h2 {
   margin: 0 auto;
 }
 
- .quote-box h2 {
+.quote-box h2 {
   font-size: 32px;
   line-height: 43px;
   color: #ffffff;
@@ -399,13 +399,13 @@ h2 {
   margin-left: -12%;
 }
 
- .quote-box p {
-  width:700px;
-font-family: "Inter";
-font-weight: 400;
-font-size: 18px;
-line-height: 26px;
-color: #FFFFFF;
+.quote-box p {
+  width: 700px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
@@ -439,14 +439,14 @@ textarea {
   resize: none;
 }
 .btn-3 {
-  background-color: #0E0E0E;
+  background-color: #0e0e0e;
   color: #ffffff;
   font-size: 18px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 200px;
-  height:54px;
+  height: 54px;
   text-align: center;
   font-weight: 600;
 }
@@ -455,14 +455,116 @@ textarea {
 }
 
 .btn-3:hover {
-  background-color:burlywood;
+  background-color: burlywood;
 }
 
-.quick-links{
+.quick-links {
   display: flex;
   align-items: center;
   min-height: 50vh;
-  background-color: #0E0E0E;
+  background-color: #0e0e0e;
+}
+
+footer {
+  padding: 40px 10%;
+  width:100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  min-width: 250px;
+}
+
+.footer-logo img {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  width: 367px;
+  font-family: "Inter";
+  line-height: 26px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #ff9800;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-center h3,
+.footer-right h3 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 24px;
+  color: #e58e1a;
+  margin-bottom: 15px;
+}
+
+.footer-center ul {
+  list-style: none;
+}
+
+.footer-center ul li {
+  margin: 8px 0;
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+.footer-center ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-center ul li a:hover {
+  color: #ff9800;
+}
+
+.footer-right p {
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  margin: 8px 0;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  border-top: 1px solid #ffffff;
+  padding-top: 40px;
+  font-family: "Inter";
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
 }
 @media (max-width: 768px) {
   .form-group {
