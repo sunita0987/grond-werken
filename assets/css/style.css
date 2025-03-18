@@ -199,7 +199,7 @@ header {
 .left {
   background: url(/assets/images/image1.png);
   background-position: center;
-  opacity:0.23;
+  opacity: 0.23;
 }
 
 /* Right Section */
@@ -207,7 +207,7 @@ header {
   background: url(/assets/images/image2.png);
   background-size: cover;
   background-position: center;
-  opacity:0.5;
+  opacity: 0.5;
 }
 
 /* Content Styling */
@@ -217,24 +217,22 @@ header {
   padding: 50px;
   /* background: rgba(0, 0, 0, 0.5); */
 }
- h2 {
-width: 390px;
-font-family: 'Inter';
-line-height: 28px;
-text-align: right;
-margin-bottom: 10px;
+h2 {
+  width: 390px;
+  font-family: "Inter";
+  line-height: 28px;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
-p {
-font-family: 'Inter';
-font-weight: 400;
-font-size: 15px;
-line-height: 22px;
-text-align: right;
-margin-bottom: 30px;
+.content p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+  margin-bottom: 30px;
 }
-
-/* CTA Button */
 .btn-1 {
   display: inline-flex;
   align-items: center;
@@ -244,54 +242,121 @@ margin-bottom: 30px;
   text-decoration: none;
   border-radius: 6px;
   transition: 0.3s ease;
-font-family: 'Inter';
-font-weight: 600;
-font-size: 18px;
-line-height: 22px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 }
-
 .btn-1 span {
   margin-left: 8px;
   transition: 0.3s ease;
 }
-
 .btn-1:hover {
   background: #d48b1e;
 }
-
 .btn-1:hover span {
   transform: translateX(5px);
 }
-
-/* Hover Effects */
 .split:hover {
   flex: 1.2;
 }
 
-/* Responsive */
+.about {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.about-us {
+  background-color: #f6921e;
+  padding: 50px 20px;
+  width: 100%;
+  height: 700px;
+}
+
+.container-1 {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.content-about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content-about h3 {
+  font-family: "Inter";
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.content-about h2 {
+width: 500px;
+font-size: 40px;
+line-height: 48px;
+color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.about-text {
+  width: 540px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.workers img {
+  width: 450px;
+  height: 300px;
+}
+
+.factory img {
+  width: 690px;
+  height: 200px;
+  margin-left: 100%;
+  margin-top:-60px;
+}
 @media (max-width: 768px) {
-  .split-container {
-    flex-direction: column;
+  .container {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .split {
-    height: 50vh;
+  .images {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
   }
 
-  .split:hover {
-    flex: 1;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .btn-1 {
-    font-size: 0.9rem;
-    padding: 10px 15px;
+  .workers img,
+  .factory img {
+    width: 48%;
   }
 }
 
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .images {
+    flex-direction: column;
+  }
+
+  .workers img,
+  .factory img {
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .hero-content {
     text-align: center;
