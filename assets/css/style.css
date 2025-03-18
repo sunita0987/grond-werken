@@ -28,7 +28,6 @@
   left: 0px;
   width: 100%;
   height: 100vh;
-  backdrop-filter: blur(10px);
 }
 header {
   background: rgba(14, 14, 14, 0.3);
@@ -109,5 +108,80 @@ header {
 }
 
 .quote-btn:hover {
-  background: #ffffff;
+  background:#d48b1e;
+}
+
+.hero {
+  position: relative;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 0px;
+}
+.overlay {
+  height: 200px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  left:-20%;
+  margin: 40px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  width: 607px;
+  font-family: "Inter";
+  font-size: 48px;
+  line-height: 43px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-family: "Inter";
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.btn {
+  display: inline-flex;
+  background: #e58e1a;
+  color: #ffffff;
+  padding: 16px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.btn span {
+  margin-left: 20px;
+}
+
+.btn:hover {
+  background: #d48b1e;
+}
+
+.btn:hover span {
+  transform: translateX(5px);
+}
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+
+  }
+
+  .hero-content p {
+    font-size: 10px;
+  }
 }
